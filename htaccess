@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Exclude index.php and other existing files/folders from redirection
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Allow clean URLs like /agastya or /category/agastya
+RewriteRule ^(.+)$ slug.php?slug=$1 [L,QSA]
