@@ -4,6 +4,11 @@ $username = "root"; // Change if needed
 $password = "";
 $dbname = "maharishi_db";
 
+// $servername = "sql301.infinityfree.com";
+// $username = "if0_38428339"; // Change if needed
+// $password = "2OihBSB58q9Pxj";
+// $dbname = "if0_38428339_maharishi";
+
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
